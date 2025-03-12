@@ -11,6 +11,6 @@ public class PlayerMove : MonoBehaviour
         var veloz = speed * Input.GetAxisRaw("Horizontal");
 
         // Rigidbodyコンポーネントを取得して速度を設定
-        GetComponent<Rigidbody>().linearVelocity = new Vector3(0f, 0f, -veloz);
+        GetComponent<Rigidbody>().linearVelocity = new Vector3(0f, 0f, veloz);
     }
 }
